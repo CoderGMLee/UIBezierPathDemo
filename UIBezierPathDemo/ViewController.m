@@ -19,28 +19,6 @@
 
     CustomView * view = [[CustomView alloc]initWithFrame:self.view.frame];
     [self.view addSubview:view];
-//    [self test1];
-}
-- (void)test1{
-    
-    UIBezierPath * path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(100, 100)];
-    [path addLineToPoint:CGPointMake(200, 100)];
-    [path stroke];
-//    [[UIColor blackColor] setStroke];
-    
-    CAShapeLayer * pathLayer = [CAShapeLayer layer];
-    pathLayer.path = path.CGPath;
-    pathLayer.strokeColor = nil;
-    pathLayer.fillColor = [UIColor greenColor].CGColor;
-    pathLayer.lineJoin = kCALineJoinBevel;
-    
-    
-    
-    self.view.layer.mask = pathLayer;
-    
-    
-
 }
 
 
