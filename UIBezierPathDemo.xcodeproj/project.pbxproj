@@ -14,6 +14,7 @@
 		8ACF70DA1B787F5F0083A343 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ACF70D91B787F5F0083A343 /* Images.xcassets */; };
 		8ACF70DD1B787F5F0083A343 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ACF70DB1B787F5F0083A343 /* LaunchScreen.xib */; };
 		8ACF70E91B787F5F0083A343 /* UIBezierPathDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF70E81B787F5F0083A343 /* UIBezierPathDemoTests.m */; };
+		8ACF70F41B7881960083A343 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF70F31B7881960083A343 /* CustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		8ACF70E21B787F5F0083A343 /* UIBezierPathDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIBezierPathDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ACF70E71B787F5F0083A343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ACF70E81B787F5F0083A343 /* UIBezierPathDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathDemoTests.m; sourceTree = "<group>"; };
+		8ACF70F21B7881960083A343 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		8ACF70F31B7881960083A343 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				8ACF70D11B787F5F0083A343 /* AppDelegate.m */,
 				8ACF70D31B787F5F0083A343 /* ViewController.h */,
 				8ACF70D41B787F5F0083A343 /* ViewController.m */,
+				8ACF70F21B7881960083A343 /* CustomView.h */,
+				8ACF70F31B7881960083A343 /* CustomView.m */,
 				8ACF70D61B787F5F0083A343 /* Main.storyboard */,
 				8ACF70D91B787F5F0083A343 /* Images.xcassets */,
 				8ACF70DB1B787F5F0083A343 /* LaunchScreen.xib */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ACF70D51B787F5F0083A343 /* ViewController.m in Sources */,
+				8ACF70F41B7881960083A343 /* CustomView.m in Sources */,
 				8ACF70D21B787F5F0083A343 /* AppDelegate.m in Sources */,
 				8ACF70CF1B787F5F0083A343 /* main.m in Sources */,
 			);
