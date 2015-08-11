@@ -17,6 +17,7 @@
  理解：UIBezierPath是针对Core Graphics做了一些简单的封装（将底层C的API使其OC化），使其能够不在drawRect中也能绘制图形，贝塞尔曲线有一个复杂的计算公式，可以根据公式绘制出不同的图形
  
  学习链接：http://blog.csdn.net/guo_hongjun1611/article/details/7842110
+        ：http://www.tuicool.com/articles/uyiEBv
  
  使用CAShapeLayer与UIBezierPath可以实现不在view的drawRect方法中就画出一些想要的图形
  
@@ -77,20 +78,18 @@
 - (void)setLine{
     
     UIBezierPath * path =[UIBezierPath new];
-    [path moveToPoint:CGPointMake(35, 200)];
-    [path addLineToPoint:CGPointMake(50, 150)];
-    [path addLineToPoint:CGPointMake(240, 150)];
-//    [path addLineToPoint:CGPointMake(250, 150)];
-    [path addCurveToPoint:CGPointMake(240, 150) controlPoint1:CGPointMake(50, 150) controlPoint2:CGPointMake(35, 200)];
+    [path moveToPoint:CGPointMake(10, 200)];
+    /*
+     param : endPoint     终点
+     param : contorlPoint 控制点
+     */
+    [path addQuadCurveToPoint:CGPointMake(365, 200) controlPoint:CGPointMake(185, 100)];
     [path stroke];
     [[UIColor redColor] setStroke];
-    
     shapeLayer.path = path.CGPath;
     
     
 }
-
-
 
 
 
